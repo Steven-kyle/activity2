@@ -1,0 +1,103 @@
+*,::before,::after{
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+section{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0rem 1rem;
+    padding: .5rem .5rem;
+    width: 100%;
+
+}
+nav a {
+    color:white;
+    margin:1rem;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.banner1{
+    height:100vh;
+    background-image: url(images/Banner1.jpg);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.landing_title img{
+    width: 80%;
+}
+
+.landing_title{
+   
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:1rem;
+}
+
+footer{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    width:100%;
+}
+
+.stream_button button{
+background:red;
+outline: none;
+border:none;
+padding:1rem 2rem;
+color:white;
+cursor:pointer;
+}
+
+
+/* banner 2 */
+
+.banner2{
+    height:100vh;
+    background-image: url(images/Banner2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*  RESPONSIVE */
+
+
+@media (min-width:1024px){
+
+    section{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
